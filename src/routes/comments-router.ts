@@ -18,7 +18,7 @@ commentsRouter
         authBearerMiddleware,
         objectIdValidation,
         likeStatusForCommentValidation(),
-        commentsController.updateLikeStatusForComment.bind(commentsController))
+        commentsController.changeLikeStatusForComment.bind(commentsController))
 
     .delete('/:id',
         authBearerMiddleware,

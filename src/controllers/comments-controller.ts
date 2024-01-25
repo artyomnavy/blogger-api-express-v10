@@ -84,7 +84,7 @@ export class CommentsController {
             res.send(comment)
         }
     }
-    async updateLikeStatusForComment(req: RequestWithParamsAndBody<Params, {likeStatus: string}>, res: Response) {
+    async changeLikeStatusForComment(req: RequestWithParamsAndBody<Params, {likeStatus: string}>, res: Response) {
         const userId = req.userId!
         const commentId = req.params.id
         const likeStatus = req.body.likeStatus

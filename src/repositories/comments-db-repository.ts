@@ -25,7 +25,7 @@ export class CommentsRepository {
             })
         return resultUpdateComment.matchedCount === 1
     }
-    async updateLikeStatusCommentForUser(
+    async changeLikeStatusCommentForUser(
         commentId: string,
         likeStatus: string,
         likesCount: number,

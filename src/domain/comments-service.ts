@@ -87,6 +87,6 @@ export class CommentsService {
         }
 
         return await this.commentsRepository
-            .updateLikeStatusCommentForUser(commentId, likeStatus, likesCount, dislikesCount)
+            .changeLikeStatusCommentForUser(commentId, likeStatus, likesCount, dislikesCount)
     }
 }
