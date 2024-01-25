@@ -1,8 +1,6 @@
 import {body} from "express-validator";
 import {inputModelValidation} from "../inputModel/input-model-validation";
-import {UsersQueryRepository} from "../../repositories/users-db-query-repository";
-
-const usersQueryRepository = new UsersQueryRepository()
+import {usersQueryRepository} from "../../composition-root";
 
 const loginValidation = body('login')
     .isString()
