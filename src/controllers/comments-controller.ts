@@ -120,7 +120,7 @@ export class CommentsController {
             .updateLikeStatus(commentId, userId, likeStatus)
 
         const isUpdated = await this.commentsService
-            .updateLikeStatusCommentForUser(commentId, likeStatus, likesCount, dislikesCount, currentMyStatus)
+            .changeLikeStatusCommentForUser(commentId, likeStatus, likesCount, dislikesCount, currentMyStatus)
 
         if (isUpdated) {
             res.sendStatus(HTTP_STATUSES.NO_CONTENT_204)

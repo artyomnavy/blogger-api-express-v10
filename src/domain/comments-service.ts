@@ -53,7 +53,7 @@ export class CommentsService {
         return await this.likesRepository
             .updateLikeStatus(commentId, userId, likeStatus)
     }
-    async updateLikeStatusCommentForUser(
+    async changeLikeStatusCommentForUser(
         commentId: string,
         likeStatus: string,
         likesCount: number,
